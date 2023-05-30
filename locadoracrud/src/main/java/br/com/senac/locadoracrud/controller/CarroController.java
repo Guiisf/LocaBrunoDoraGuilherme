@@ -39,14 +39,12 @@ public class CarroController {
     }
 
     @GetMapping("/")
-public String exibirPaginaInicial() {
-    return "index";
-}
+    public String exibirPaginaInicial() {
+        return "home";
+    }
 
-@RequestMapping("/error")
-public String handleError() {
-    return "error";
-}
-
-
+    @RequestMapping("/error")
+    public String handleError() {
+        return "error";
+    }
 }
