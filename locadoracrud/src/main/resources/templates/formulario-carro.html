@@ -2,25 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Formulário de Carro</title>
+    <title>Formulário de reserva</title>
 </head>
-<body>
-    <h1>Formulário de Carro</h1>
+<body style="background-color: black; color: white; font: 1em sans-serif;">
+    <h1 style="text-align: center; margin: 20px 0;">Faça sua Reserva</h1>
     
-    <form action="/carros/salvar" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+    <form action="/carros/salvar" method="post" style="max-width: 400px; margin: 0 auto; text-align: center; background-color: #fff; padding: 20px; border-radius: 4px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <label for="nome" style="display: block; margin-bottom: 10px; color: black;">Nome:</label>
+        <input type="text" id="nome" name="nome" required style="width: 300px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; margin-bottom: 20px; color: black;">
         
-        <label for="dataRetirada">Data e Hora de Retirada:</label>
-        <input type="datetime-local" id="dataRetirada" name="dataRetirada" required>
+        <label for="dataRetirada" style="display: block; margin-bottom: 10px; color: black;">Data e Hora de Retirada:</label>
+        <input type="datetime-local" id="dataRetirada" name="dataRetirada" required style="width: 300px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; margin-bottom: 20px; color: black;">
         
-        <label for="modelo">Modelo:</label>
-        <input type="text" id="modelo" name="modelo" required>
+        <label for="modelo" style="display: block; margin-bottom: 10px; color: black;">Modelo:</label>
+        <input type="text" id="modelo" name="modelo" required style="width: 300px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; margin-bottom: 20px; color: black;">
         
-        <label for="cor">Cor:</label>
-        <input type="text" id="cor" name="cor" required>
+        <label for="cor" style="display: block; margin-bottom: 10px; color: black;">Cor:</label>
+        <input type="text" id="cor" name="cor" required style="width: 300px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; margin-bottom: 20px; color: black;">
         
-        <input type="submit" value="Salvar">
+        <br>
+        <input type="submit" value="Salvar" style="background-color: rgb(4, 4, 175); color: white; cursor: pointer; width: 320px; padding: 10px;">
     </form>
 </body>
 </html>

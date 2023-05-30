@@ -1,13 +1,50 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Página Inicial</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Bem-vindo à Locadora LocaBruno DoraGuilherme</h1>
-        <p>Aqui você pode alugar carros de forma rápida e fácil.</p>
-        <a href="/carros/form">Clique aqui para alugar um carro</a>
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/fotos-gratis/o-carro-esta-dirigindo-ao-longo-da-estrada-ao-longo-do-mar_169016-28489.jpg?w=1380&t=st=1685487753~exp=1685488353~hmac=e81b3e15719bc5ae2ebe291eb1faeec0f21e4df138e6681011bd23dcd1bad49c');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            font-family: "Arial", sans-serif;
+            font-size: 32px;
+            color: black;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        a.button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo à Locadora LocaBruno DoraGuilherme</h1>
+    <p>Aqui você pode alugar carros de forma rápida e fácil.</p>
+    <a href="/carros/form" class="button">Clique aqui para alugar um carro</a>
+</body>
+</html>
