@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Alteração de Carro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            margin-top: 20px;
+            width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alterar Carro da Reserva</h1>
+    
+    <form action="/carros/alterarCarro" method="post" th:object="${carro}">
+        <input type="hidden" th:field="*{id}">
+        
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" th:field="*{nome}">
+        
+        <label for="cor">Cor:</label>
+        <input type="text" id="cor" th:field="*{cor}">
+        
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" th:field="*{modelo}">
+        
+        <button type="submit">Salvar Alterações</button>
+    </form>
+</body>
+</html>

@@ -50,11 +50,16 @@
             <th>Nome</th>
             <th>Cor</th>
             <th>Modelo</th>
+            <th>Ações</th> <!-- Nova coluna para as ações -->
         </tr>
         <tr th:each="carro : ${carros}">
             <td th:text="${carro.nome}"></td>
             <td th:text="${carro.cor}"></td>
             <td th:text="${carro.modelo}"></td>
+            <td>
+                <a th:href="@{/carros/alterarCarro(id=${carro.id})}">Editar</a>
+                <a th:href="@{/carros/excluirCarro(id=${carro.id})}">Excluir</a>
+            </td>
         </tr>
     </table>
 </body>
